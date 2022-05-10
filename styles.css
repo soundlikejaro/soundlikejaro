@@ -1,0 +1,23 @@
+* {font-family: 'Archivo', sans-serif;
+	color: #707070;}
+a {color: #3E3131}
+body{background-color: #EEEEEE}
+h2:hover{
+	color: #FFFFFF;
+}
+a:hover{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a{
+	text-decoration: none;
+}
+.shape {
+  height: 15px;
+  width: 290px;
+  background-color: #FF595B;
+position: absolute;
+	top: 95%;
+	left: 12.8%;
+	z-index: -1;
+}
