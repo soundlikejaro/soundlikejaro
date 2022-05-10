@@ -1,7 +1,7 @@
 * {font-family: 'Archivo', sans-serif;
 	color: #707070;}
 a {color: #707070;text-decoration: none;}
-body{background-color: #ffe8e8}
+body{background-color: #ffe8e8; width: 100%}
 a:hover{
 	color: #FFFFFF;
 	text-decoration: none;
@@ -23,4 +23,43 @@ h2{color: #ffffff;text-shadow: 0px 0px 30px #dfc9c9;}
 	right: -1px;
 	position: absolute;
 	object-fit: fill;
+}
+.video2{
+	height: 100%; 
+	min-height: 100%;
+	width: 100%;
+	min-width: 100%;
+	position: absolute;
+	left: 80%;
+	object-fit: fill;
+}
+/* Arrow holder */
+.arrowed {
+	position: absolute;
+	top: 50%; left: 10%;
+	z-index: 100;
+}
+
+/* Just centering the examples */
+.arrowed div {
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	margin: auto;
+}
+/* -- ARROW 2      -- */
+
+.arrow-2 {
+	height: 50px; width: 50px;
+	border: 10px solid #FFFFFF;
+	border-width: 10px 10px 0 0;
+	transform: rotate(45deg);
+}
+
+	
+	/* Parent's rotation also
+	   rotates transform axis */
+	/* Add width of border to Y */
+	transform:translate(5px, -6px);
+	
+	/* rotate handled by parent */
 }
