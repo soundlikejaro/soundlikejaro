@@ -1,88 +1,133 @@
-* {font-family: 'Archivo', sans-serif;
-	color: #707070;}
-a {color: #707070;text-decoration: none;}
-body{background-color: #ffe8e8; width: 100%}
-a:hover{
-	color: #FFFFFF;
-	text-decoration: none;
-}
-h2{color: #ffffff;text-shadow: 0px 0px 30px #dfc9c9;}
-.shape {
-  height: 15px;
-  width: 290px;
-  background-color: #FF595B;
-  position: absolute;
-  top: 95%;
-  left: 12.8%;
-  z-index: -1;
-}
-@media screen and (max-width: 1000px) {
-   .arrow-2 {
-		display: none;	}
-	.video2 {
-		top: 90%;
-		left: 0 !important;
-		right: 0 !important;
-		position: absolute;
-	}
+* {
+    font-family: 'Archivo', sans-serif;
+    color: #707070;
 }
 
-@media screen and (min-width:0px) and (max-width: 1000px) {
-  .video3, .arrow-3, .arrowed2 {
-	  display: block;}
+a {
+    color: #707070;
+    text-decoration: none;
 }
+
+body {
+    background-color: #ffe8e8;
+    width: 100%
+}
+
+a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+h2 {
+    color: #ffffff;
+    text-shadow: 0px 0px 30px #dfc9c9;
+}
+
+.shape {
+    height: 15px;
+    width: 290px;
+    background-color: #FF595B;
+    position: absolute;
+    top: 95%;
+    left: 12.8%;
+    z-index: -1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.arrow {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .arrow-2 {
+        display: none;
+    }
+
+    .video2 {
+        top: 90%;
+        left: 0 !important;
+        right: 0 !important;
+        position: absolute;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+    .video3, .arrow-3, .arrowed2 {
+        display: block;
+    }
+}
+
 @media screen and (min-width: 1001px) {
-  .video3, .arrow-3 {
-display: none;	}
+    .video3, .arrow-3 {
+        display: none;
+    }
 }
-.video2{
-	height: 100%; 
-	min-height: 100%;
-	width: 100%;
-	min-width: 100%;
-	position: absolute;
-	left: 80%;
-	object-fit: fill;
+
+.video2 {
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    min-width: 100%;
+    position: absolute;
+    left: 80%;
+    object-fit: fill;
 }
+
 /* Arrow holder */
 .arrowed {
-	position: absolute;
-	top: 50%; left: 10%;
-	z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    z-index: 100;
 }
 
 /* Just centering the examples */
 .arrowed div {
-	position: absolute;
-	top: 0; bottom: 0; left: 0; right: 0;
-	margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
+
 /* -- ARROW 2      -- */
 
 .arrow-2 {
-	height: 50px; width: 50px;
-	border: 10px solid #FFFFFF;
-	border-width: 10px 10px 0 0;
-	transform: rotate(45deg);
+    height: 50px;
+    width: 50px;
+    border: 10px solid #FFFFFF;
+    border-width: 10px 10px 0 0;
+    transform: rotate(45deg);
 
 }
+
 .arrowed2 {
-	position: absolute;
-	top: 80%; right: 0%;
-	z-index: 100;
+    position: absolute;
+    top: 80%;
+    right: 0%;
+    z-index: 100;
 }
 
 /* Just centering the examples */
 .arrowed2 div {
-	position: absolute;
-	top: 0; bottom: 0; left: 0; right: 0;
-	margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
+
 .arrow-3 {
-	height: 50px; width: 50px;
-	border: 10px solid #FFFFFF;
-	border-width: 10px 10px 0 0;
-	transform: rotate(135deg);
+    height: 50px;
+    width: 50px;
+    border: 10px solid #FFFFFF;
+    border-width: 10px 10px 0 0;
+    transform: rotate(135deg);
 
 }
 
