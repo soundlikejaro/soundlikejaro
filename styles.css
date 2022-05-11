@@ -6,6 +6,7 @@
 a {
     color: #707070;
     text-decoration: none;
+	cursor: pointer;
 }
 
 body {
@@ -20,7 +21,7 @@ a:hover {
 
 h2 {
     color: #ffffff;
-    text-shadow: 0px 0px 30px #dfc9c9;
+    text-shadow: 0px 0px 30px #baa0a0;
 }
 
 .shape {
@@ -29,10 +30,15 @@ h2 {
     background-color: #FF595B;
     position: absolute;
     top: 95%;
-    left: 12.8%;
+    left: 12.75%;
     z-index: -1;
+	animation: shapein 0.8s ease-out;
+	
 }
-
+@keyframes shapein {
+  from   {width: 100px; opacity: 90%}
+  to {width: 290px; opacity: 100%}
+}
 html {
     scroll-behavior: smooth;
 }
@@ -102,7 +108,15 @@ html {
     border: 10px solid #FFFFFF;
     border-width: 10px 10px 0 0;
     transform: rotate(45deg);
+	animation-name: bounce;
+ 	animation-duration: 0.5s;
+ 	animation-iteration-count: infinite;
+ 	animation-direction: alternate;
 
+}
+@keyframes bounce {
+  from   {left:0px; top:0px;}
+  to {left:10px; top:0px;}
 }
 
 .arrowed2 {
@@ -128,6 +142,14 @@ html {
     border: 10px solid #FFFFFF;
     border-width: 10px 10px 0 0;
     transform: rotate(135deg);
+	animation-name: bounceupdown;
+ 	animation-duration: 0.5s;
+ 	animation-iteration-count: infinite;
+ 	animation-direction: alternate;
 
+}
+@keyframes bounceupdown {
+  from   {left:0px; top:0px;}
+  to {left:0px; top:10px;}
 }
 
