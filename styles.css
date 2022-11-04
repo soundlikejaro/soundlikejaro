@@ -165,3 +165,16 @@ html {
   to {left:0px; top:10px;}
 }
 
+:root {
+    --plyr-color-main: #ffe8e8;
+}
+
+.plyr--video {
+    height: 100vh;
+}
+
+[data-plyr="pip"] {
+    display: none !important;
+}
+
+

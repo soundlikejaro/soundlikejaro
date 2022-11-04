@@ -17,13 +17,14 @@
 </head>
 <body>
 <div id="video-container" class="video2 embed-responsive load2">
-    <div id="video123">
-        <h4>
-            <video controls crossorigin playsinline>
-                    <source src="https://soundlikejaro.s3.eu-west-2.amazonaws.com/AdamJaro_showreel_2022.mp4" type="video/mp4" size="1080">
-            </video>
-        </h4>
-    </div>
+    <video loop controls crossorigin playsinline data-poster="https://soundlikejaro.s3.eu-west-2.amazonaws.com/adam_showreel-thumbnail.jpg">
+        <source src="https://soundlikejaro.s3.eu-west-2.amazonaws.com/AdamJaro_showreel_2022_576.mp4" type="video/mp4"
+                size="576">
+        <source src="https://soundlikejaro.s3.eu-west-2.amazonaws.com/AdamJaro_showreel_2022_720.mp4" type="video/mp4"
+                size="720">
+        <source src="https://soundlikejaro.s3.eu-west-2.amazonaws.com/AdamJaro_showreel_2022.mp4" type="video/mp4"
+                size="1080">
+    </video>
 </div>
 <div class="row vh-100">
     <div class="arrowed arrow">
@@ -44,29 +45,27 @@
         </div>
     </div>
 </div>
-<h4><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-  
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap-4.4.1.js"></script>
-  <script src="https://unpkg.com/plyr@3"></script>
-  <script>
-      const player = new Plyr('video', {captions: {active: false}});
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
-      // Expose player so it can be used from the console
-      window.player = player;
-  </script>
-</h4>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
+<script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
 <script>
-      document.getElementById('horizontal-chevron').addEventListener('click', () => {
+    const player = new Plyr('video', {captions: {active: false}, autoplay: true });
+
+    // Expose player so it can be used from the console
+    window.player = player;
+</script>
+<script>
+    document.getElementById('horizontal-chevron').addEventListener('click', () => {
         const scrollDistance = document.getElementById('video-container').offsetLeft;
-        window.scroll({ left: scrollDistance });
-      });
-      document.getElementById('vertical-chevron').addEventListener('click', () => {
+        window.scroll({left: scrollDistance});
+    });
+    document.getElementById('vertical-chevron').addEventListener('click', () => {
         const scrollDistance = document.getElementById('video-container').offsetTop;
-        window.scroll({ top: scrollDistance });
-      });
+        window.scroll({top: scrollDistance});
+    });
 </script>
 </body>
 
